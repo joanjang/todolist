@@ -35,6 +35,7 @@ button {
   left: 0;
   width: 100%;
   height: 100%;
+  object-fit: cover;
   z-index: -1;
   animation: fadeIn 0,5s linear;
 }
@@ -94,12 +95,14 @@ button {
   box-shadow: inset 0 -0.5px 0 #ddd;
 }
 
+.userName input::placeholder {
+  color: inherit;
+}
+
 .userName input:focus {
-  color: #2e2929;
   background-color: transparent;
   border-color: #9acffa;
   outline: 0;
-  box-shadow: inset 0 -1px 0 #2e2929;
 }
 
 .task {
